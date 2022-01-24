@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+  <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
+        <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Adminhub-Master</title>
+
+       
+
+    
+<style>
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 90%;
+  border: 1px solid #ddd;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even){background-color: #f2f2f2}
+
+
+
+        .btn {
+            background-color:light gray;
+            border: none;
+            border-radius: 30px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            padding-left: 10px;
+            padding-right: 18px;
+
+          
+            }
+    </style>
+</head>
+
+<body style="background-color: lightgray">
+
+ 
+
+  <section id="sidebar">
+        <a href="#" class="brand">
+            <i class='bx bxs-smile'></i>
+            <span class="text">AdminHub</span>
+        </a>
+        <ul class="side-menu top">
+            <li class="active">
+                <a href="home.html">
+                    <i class="bx bxs-home"></i>
+                    <span class="text">Home</span>
+                </a>
+            </li>
+
+            <li class="active">
+                <a href="Transaction.html">
+                    <i class="fas fa-comments-dollar"></i>
+                    <span class="text">Transactions</span>
+                </a>
+            </li>
+
+
+            <li class="active">
+                <a href="#">
+                    <i class="fas fa-comment-dots"></i>
+                    <span class="text">Quotations</span>
+                </a>
+            </li>
+
+
+            <li class="active">
+                <a href="All Documents.html">
+                    &nbsp&nbsp&nbsp <i class="far fa-file-alt"></i> &nbsp &nbsp
+                    <span class="text">All Documents</span>
+                </a>
+            </li>
+
+
+            <li class="active">
+                <a href="#">
+                    <i class="fas fa-file-invoice-dollar"></i>
+                    <span class="text">Payments</span>
+                </a>
+            </li>
+
+            <li class="active">
+                <a href="inventory.html">
+                    <i class="fas fa-dolly-flatbed"></i>
+                    <span class="text">Inventory</span>
+                </a>
+            </li>
+
+            <li class="active">
+                <a href="Buyers & Suppliers.html">
+                    <i class="fas fa-users"></i>
+                    <span class="text">Buyers & Suppliers</span>
+                </a>
+            </li>
+
+
+            <!-- <li class="active">
+                <a href="#">
+                    <i class="fas fa-chart-line"></i>
+                    <span class="text">Buisness Intelligence</span>
+                </a>
+            </li> -->
+
+            <li class="active">
+                <a href="#" class="logout">
+                    <i class="fas fa-book-open"></i>
+                    <span class="text">Reports</span>
+                </a>
+            </li>
+        </ul>
+    </section>
+
+    <section id="content">
+    <nav>
+     <i class='bx bx-menu'></i>
+       <a href="#" class="notification">
+       <a href="#" class="profile">
+        <img src="img/people.png">
+            </a>
+            </a>
+
+    </nav>
+
+      <h1 style="padding-left: 30px">Transactions</h1>
+
+    <div class="container">
+  <div class="btn-group">
+
+
+  <a href="#" class="notification" style="margin-left: 70%;height: 40%;">
+                <i class='bx bxs-bell'></i>
+                
+            </a>
+
+   <div class="dropdown">
+        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" style="margin-left:10px">CREATE DOCUMENT
+    <span class="caret"></span></button>
+        <ul class="dropdown-menu" style="margin-left:10px">
+      <li><a href="#">Purchase order</a></li>
+      <li><a href="#">Order Confirmation</a></li>
+      <li><a href="#">Invoice</a></li>
+      <li><a href="#">Adhoc invoice</a></li>
+     
+    </ul>
+    </div>
+</div>
+
+<!-- Middle section -->
+
+<!-- <div class="btn-group" style="margin-top: 50px"> -->
+  <!--   <select class="form-control" style="margin-left: 50px;margin-right: 100px;padding-right: 50px;padding-left: 50px;margin-top: 20px;size:50px; ">
+      <option>All</option>
+      <option>purchase transaction</option>
+      <option>sales transaction</option>
+     </select>  -->
+
+     <div class="btn-group" style="margin-top: 50px;">
+    <div class="dropdown" style="width: 30%;">
+    <select class="form-control">
+      <option>All</option>
+      <option>purchase transaction</option>
+      <option>sales transaction</option>
+     </select>
+       
+    </div>
+
+     <div class="dropdown" style="margin-left: 10px;width:30%;">
+    <select class="form-control">
+      <option>All</option>
+      <option>purchase transaction</option>
+      <option>sales transaction</option>
+     </select>
+       
+    </div>
+    <div class="dropdown" style="margin-left: 10px;width: 30%">
+    <select class="form-control">
+      <option>All</option>
+      <option>purchase transaction</option>
+      <option>sales transaction</option>
+     </select>
+       
+    </div>
+</div>
+</div>
+
+<!-- table section
+ -->
+     <div class="row">
+   <div class="col-md-11">
+     <div style="overflow-x:auto;margin-top:150px;margin-left:30px;margin-right:10px;">
+  <table>
+    <tr>
+      <th>COMPANY NAME</th>
+      <th>TRANSACTION NAME</th>
+      <th>DOCUMENT NUMBER</th> 
+      <th>GOOD STATUS</th>
+      <th>LAST MODIFIED DATE</th>
+    </tr>
+    <tr>
+      <td><input type="email" class="form-control"placeholder="Search..." style="height:30px;width:100px;margin-left:10px"></td>
+      <td><input type="email" class="form-control"placeholder="Search..." style="height:30px;width:100px;margin-left:10px"></td>
+      <td><input type="email" class="form-control"placeholder="Search..." style="height:30px;width:100px;margin-left:10px"></td>
+      <td><input type="email" class="form-control"placeholder="Search..." style="height:30px;width:100px;margin-left:10px"></td>
+      <td>50</td>
+
+    </tr>
+    <tr>
+      <td>Supplier</td>
+      <td>Jackson</td>
+      <td>94</td>
+      <td>94</td>
+    </tr>
+  </table>
+</div>
+   </div>
+
+ </div>
+
+   
+
+</div>
+<!--  -->
+
+</section>
+</body>
+</html>
+
+
+
+
+
